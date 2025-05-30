@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 222.2 84% 4.9%;
+--card: 0 0% 100%;
+--card-foreground: 222.2 84% 4.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 222.2 84% 4.9%;
+--primary: 221.2 83.2% 53.3%;
+--primary-foreground: 210 40% 98%;
+--secondary: 210 40% 96.1%;
+--secondary-foreground: 222.2 47.4% 11.2%;
+--muted: 210 40% 96.1%;
+--muted-foreground: 215.4 16.3% 46.9%;
+--accent: 210 40% 96.1%;
+--accent-foreground: 222.2 47.4% 11.2%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 210 40% 98%;
+--border: 214.3 31.8% 91.4%;
+--input: 214.3 31.8% 91.4%;
+--ring: 221.2 83.2% 53.3%;
+				}
+				.dark {
+					--background: 222.2 84% 4.9%;
+--foreground: 210 40% 98%;
+--card: 222.2 84% 4.9%;
+--card-foreground: 210 40% 98%;
+--popover: 222.2 84% 4.9%;
+--popover-foreground: 210 40% 98%;
+--primary: 217.2 91.2% 59.8%;
+--primary-foreground: 222.2 47.4% 11.2%;
+--secondary: 217.2 32.6% 17.5%;
+--secondary-foreground: 210 40% 98%;
+--muted: 217.2 32.6% 17.5%;
+--muted-foreground: 215 20.2% 65.1%;
+--accent: 217.2 32.6% 17.5%;
+--accent-foreground: 210 40% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 210 40% 98%;
+--border: 217.2 32.6% 17.5%;
+--input: 217.2 32.6% 17.5%;
+--ring: 224.3 76.3% 48%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-background text-foreground min-h-screen">
+    <header class="bg-primary text-primary-foreground py-4 px-6 flex justify-between items-center shadow-lg">
+        <h1 class="text-3xl font-bold">Ryuto's StepMania Charts</h1>
+    </header>
+    <main class="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-card text-card-foreground rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-105">
+        <a href="/DL">
+			<img src="img/shadow.png" alt="Song Artwork" class="w-full h-48 object-cover">
+		</a>
+			<div class="p-4">
+                <h2 class="text-xl font-bold mb-2">SHADOW DRIVER</h2>
+                <p class="text-sm text-muted-foreground mb-2">D'elf<br>03:09</p>
+                <div class="grid grid-cols-3 gap-2">
+                    <a href="/easy" class="bg-purple-500 text-white rounded-full py-1 px-2 text-xs flex justify-between items-center hover:bg-purple-700 transition-colors">
+                        SN <span class="bg-purple-600 text-white rounded-full py-1 px-2 text-xs">1</span>
+                    </a>
+                    <a href="/normal" class="bg-green-500 text-white rounded-full py-1 px-2 text-xs flex justify-between items-center hover:bg-green-700 transition-colors">
+                        SE <span class="bg-green-600 text-white rounded-full py-1 px-2 text-xs">2</span>
+                    </a>
+                    <a href="/hard" class="bg-yellow-500 text-white rounded-full py-1 px-2 text-xs flex justify-between items-center hover:bg-yellow-700 transition-colors">
+                        SM <span class="bg-yellow-600 text-white rounded-full py-1 px-2 text-xs">3</span>
+                    </a>
+                    <a href="/expert" class="bg-red-500 text-white rounded-full py-1 px-2 text-xs flex justify-between items-center hover:bg-red-700 transition-colors">
+                        SH <span class="bg-red-600 text-white rounded-full py-1 px-2 text-xs">4</span>
+                    </a>
+                    <a href="/master" class="bg-blue-500 text-white rounded-full py-1 px-2 text-xs flex justify-between items-center hover:bg-blue-700 transition-colors">
+                        SX <span class="bg-blue-600 text-white rounded-full py-1 px-2 text-xs">5</span>
+                    </a>
+                    <a href="/ultimate" class="bg-gray-500 text-white rounded-full py-1 px-2 text-xs flex justify-between items-center hover:bg-gray-700 transition-colors">
+                        SEd <span class="bg-gray-600 text-white rounded-full py-1 px-2 text-xs">-</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+</div>
+
+
+  </body>
+</html>
