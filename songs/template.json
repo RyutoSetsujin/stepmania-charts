@@ -1,0 +1,26 @@
+{
+  "title": "SONG TITLE",
+  "artist": "ARTIST NAME",
+  "artist_url": "https://artist.website",
+  "duration": "MM:SS",
+  "download_path": "/DL/song.zip",
+  "image_path": "img/song.png",
+  "difficulties": {
+    "singles": {
+      "novice": {"level": 1, "chart_path": "./chart/song/novice.png"},
+      "easy": {"level": 2, "chart_path": "./chart/song/easy.png"},
+      "medium": {"level": 3, "chart_path": "./chart/song/medium.png"},
+      "hard": {"level": 4, "chart_path": "./chart/song/hard.png"},
+      "expert": {"level": 5, "chart_path": "./chart/song/expert.png"},
+      "edit": {"level": "-", "chart_path": "./chart/song/edit.png"}
+    },
+    "doubles": {
+      "novice": {"level": 1, "chart_path": "./chart/song/novice-dp.png"},
+      "easy": {"level": 2, "chart_path": "./chart/song/easy-dp.png"},
+      "medium": {"level": 3, "chart_path": "./chart/song/medium-dp.png"},
+      "hard": {"level": 4, "chart_path": "./chart/song/hard-dp.png"},
+      "expert": {"level": 5, "chart_path": "./chart/song/expert-dp.png"},
+      "edit": {"level": "-", "chart_path": "./chart/song/edit-dp.png"}
+    }
+  }
+} 

@@ -1,0 +1,26 @@
+{
+  "title": "SHADOW DRIVER",
+  "artist": "D'elf",
+  "artist_url": "https://www.d-elf.com/",
+  "duration": "03:09",
+  "download_path": "/DL/Shadow.zip",
+  "image_path": "img/shadow.png",
+  "difficulties": {
+    "singles": {
+      "novice": {"level": 1, "chart_path": "./chart/shadow/novice.png"},
+      "easy": {"level": 2, "chart_path": "./chart/shadow/easy.png"},
+      "medium": {"level": 3, "chart_path": "./chart/shadow/medium.png"},
+      "hard": {"level": 4, "chart_path": "./chart/shadow/hard.png"},
+      "expert": {"level": 5, "chart_path": "./chart/shadow/expert.png"},
+      "edit": {"level": "-", "chart_path": "./chart/shadow/edit.png"}
+    },
+    "doubles": {
+      "novice": {"level": 1, "chart_path": "./chart/shadow/novice-dp.png"},
+      "easy": {"level": 2, "chart_path": "./chart/shadow/easy-dp.png"},
+      "medium": {"level": 3, "chart_path": "./chart/shadow/medium-dp.png"},
+      "hard": {"level": 4, "chart_path": "./chart/shadow/hard-dp.png"},
+      "expert": {"level": 5, "chart_path": "./chart/shadow/expert-dp.png"},
+      "edit": {"level": "-", "chart_path": "./chart/shadow/edit-dp.png"}
+    }
+  }
+} 

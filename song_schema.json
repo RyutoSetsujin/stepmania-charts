@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["title", "artist", "bpm", "difficulties", "pack"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artist": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bpm": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 1
+        },
+        {
+          "type": "string",
+          "pattern": "^[0-9]+-[0-9]+$"
+        }
+      ]
+    },
+    "pack": {
+      "type": "string",
+      "minLength": 1
+    },
+    "difficulties": {
+      "type": "object",
+      "required": ["singles", "doubles"],
+      "properties": {
+        "singles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "difficulty"],
+            "properties": {
+              "level": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 99
+              },
+              "difficulty": {
+                "type": "string",
+                "enum": ["Beginner", "Easy", "Medium", "Hard", "Challenge", "Edit"]
+              }
+            }
+          }
+        },
+        "doubles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "difficulty"],
+            "properties": {
+              "level": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 99
+              },
+              "difficulty": {
+                "type": "string",
+                "enum": ["Beginner", "Easy", "Medium", "Hard", "Challenge", "Edit"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "banner": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    },
+    "preview": {
+      "type": "string"
+    }
+  }
+} 
